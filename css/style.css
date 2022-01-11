@@ -17,9 +17,6 @@ body {
   background: url(/img/IMG_7000-2.jpg) no-repeat left top fixed;
   background-size: cover;
 }
-
-.header {
-}
 .container {
   max-width: 950px;
   margin: 0 auto;
@@ -43,7 +40,6 @@ body {
 }
 .header_menu {
 }
-
 .header_list {
   display: flex;
 }
@@ -57,13 +53,103 @@ body {
   font-size: 18px;
   text-decoration: none;
 }
+.header_link:hover {
+  color: rgb(13, 13, 65);
+  text-shadow: 1px 1px 5px rgb(230, 192, 248);
+}
 .name {
+  padding: 50px 0 150px 0;
+  font-family: "Ruda", sans-serif;
+  text-transform: uppercase;
 }
 .name_surname {
-  margin: 20px 0 100px 0;
+  font-size: 42px;
+  line-height: 55px;
+  letter-spacing: 0.2em;
+  color: black;
+  margin-bottom: 40px;
 }
-p {
+.name-job {
+  font-size: 18px;
+  letter-spacing: 0.2em;
+  color: black;
+}
+.content {
+  max-width: 100%;
+  margin: 0 0 120px 0;
+  font-family: "Roboto", sans-serif;
+}
+.tabs {
+}
+.tabs_items {
+  display: flex;
+}
+.tabs_item {
+  flex: 0 1 33.333%;
+  height: 60px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-transform: uppercase;
+  font-size: 18px;
+  color: #515151;
+  text-decoration: none;
+}
+.tabs_item span {
+  position: relative;
+  z-index: 2;
+}
+.tabs_item:hover {
+  color: black;
+}
+.tabs_item:focus {
+  color: black;
+}
+.tabs_body {
+}
+.tabs_block {
+  position: relative;
+  padding: 45px 0;
+  color: black;
   font-size: 16px;
+  line-height: 28px;
+  display: none;
+}
+.tabs_block_text {
+  display: block;
+  max-width: 950px;
+  margin: 0 auto;
+}
+.tabs_block:before {
+  content: "";
+  height: 60px;
+  width: 33.333%;
+  position: absolute;
+  top: -60px;
+}
+.tabs_block:nth-child(1) {
+  background-color: rgba(255, 222, 248, 0.7);
+}
+.tabs_block:nth-child(1):before {
+  background-color: rgba(255, 222, 248, 0.7);
+  left: 0;
+}
+.tabs_block:nth-child(2) {
+  background-color: rgba(204, 208, 255, 0.7);
+}
+.tabs_block:nth-child(2):before {
+  background-color: rgba(204, 208, 255, 0.7);
+  left: 33.333%;
+}
+.tabs_block:nth-child(3) {
+  background-color: rgba(222, 255, 247, 0.7);
+}
+.tabs_block:nth-child(3):before {
+  background-color: rgba(222, 255, 247, 0.7);
+  right: 0;
+}
+.tabs_block:target {
+  display: block;
 }
 
 @media (max-width: 767px) {
