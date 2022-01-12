@@ -12,9 +12,12 @@ body {
   font-family: "Ruda", sans-serif;
 }
 .wrapper {
+  min-height: 100%;
+  display: flex;
+  flex-direction: column;
   margin: 0 auto;
   max-width: 1220px;
-  background: url("../img/IMG_7000-2.jpg") no-repeat left top fixed;
+  background: url("../img/IMG_7000-2.jpg") no-repeat left top scroll;
   background-size: cover;
 }
 .container {
@@ -75,11 +78,10 @@ body {
   color: black;
 }
 .content {
+  flex: 1 1 auto;
   max-width: 100%;
   margin: 0 0 120px 0;
   font-family: "Roboto", sans-serif;
-}
-.tabs {
 }
 .tabs_items {
   display: flex;
@@ -154,11 +156,34 @@ body {
 .spacing {
   word-spacing: 45px;
 }
+.footer {
+  background-color: #363636;
+  padding: 50px;
+  text-align: center;
+}
+.motivation {
+  background-color: rgba(255, 253, 205, 0.5);
+  padding: 50px 0;
+  text-align: center;
+  margin-bottom: 120px;
+}
+.motivation_text {
+  color: #000000;
+  font-size: 16px;
+  letter-spacing: 0.1em;
+  margin: 20px 0;
+}
+.motivation_author {
+  font-size: 14px;
+  color: #585858;
+  letter-spacing: 0.1em;
+  margin: 20px 0;
+}
+.height {
+  padding: 95px 5px;
+}
 
 @media (max-width: 767px) {
-  body.lock {
-    overflow: hidden;
-  }
   .header_body {
     height: 60px;
   }
@@ -235,6 +260,10 @@ body {
   }
 }
 @media (max-width: 576px) {
+  .wrapper {
+    background: url("../img/IMG_7000-3.jpg") no-repeat left top scroll;
+    background-size: cover;
+  }
   .tabs_item span {
     display: block;
     width: 100px;
@@ -245,7 +274,7 @@ body {
     text-overflow: ellipsis;
   }
   .tabs_block_text {
-    padding: 0 5px;
+    padding: 20px 5px;
   }
   .header_link {
     font-size: 15px;
