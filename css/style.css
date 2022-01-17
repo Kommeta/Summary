@@ -182,6 +182,32 @@ body {
 .height {
   padding: 95px 5px;
 }
+.tabs_block a {
+  color: #000000;
+  text-decoration: none;
+}
+.tabs_block a:hover {
+  color: rgb(73, 73, 73);
+}
+.icon {
+  padding: 10px;
+}
+.footer_icons {
+  padding: 10px;
+}
+.link_white {
+  color: #fff;
+  text-decoration: none;
+}
+.phone-number:hover {
+  color: rgb(180, 180, 255);
+}
+.linkedin-link:hover {
+  color: rgb(180, 180, 255);
+}
+.footer_link {
+  padding: 10px;
+}
 
 @media (max-width: 767px) {
   .header_body {
@@ -293,5 +319,8 @@ body {
     padding: 30px 0;
     font-size: 14px;
     line-height: 26px;
+  }
+  .footer {
+    padding: 50px 10px;
   }
 }
