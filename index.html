@@ -14,7 +14,7 @@
 <body>
    <div class="wrapper">
       <header class="header">
-         <div class="header_container">
+         <div class="header_container container">
             <a href="#" class="header_logo">
                <img src="img/Logo.png" alt="logo">
             </a>
@@ -25,19 +25,19 @@
                <nav class="menu_body">
                   <ul class="menu_list">
                      <li>
-                        <a href="#tab_01" class="menu_link">Главная</a>
+                        <a data-goto=".page_section_1" href="#" class="menu_link">Главная</a>
                      </li>
                      <li>
-                        <a href="#tab_02" class="menu_link">О личности</a>
+                        <a data-goto=".page_section_2" href="#" class="menu_link">О личности</a>
                      </li>
                      <li>
-                        <a href="#tab_03" class="menu_link">Профессия</a>
+                        <a data-goto=".page_section_3" href="#" class="menu_link">Профессия</a>
                      </li>
                      <li>
-                        <a href="#tab_04" class="menu_link">Навыки</a>
+                        <a data-goto=".page_section_4" href="#" class="menu_link">Навыки</a>
                      </li>
                      <li>
-                        <a href="#tab_05" class="menu_link">Контакты</a>
+                        <a data-goto=".page_section_5" href="#" class="menu_link">Контакты</a>
                      </li>
                   </ul>
                </nav>
@@ -45,16 +45,25 @@
                
          </div>
       </header>
-
-      <div id="tab_01" class="name">
-         <div class="container">            
-            <h1 class="name_surname">Каминская  <br> Татьяна</h1>
-            <p class="name-job">FRONTEND DEVELOPER</p>            
-         </div>
+      
+      <div class="name page_section_1">
+         <div class="container name_block"> <!--html-->
+            <div class="name_content"> <!--body-->
+               <div class="name_wrapper"> <!--block-->
+                  <h1 class="name_surname">Каминская  <br> Татьяна</h1>
+                  <p class="name-job">FRONTEND DEVELOPER</p>
+               </div>            
+            </div>
+            <svg version ="1.1" xmlns="htpp://www.w3.org/2000/svg">
+               <filter id="blur">
+                  <feGaussianBlur staDeviation="6"></feGaussianBlur>
+               </filter>
+            </svg>
+         </div> <!--html-->
       </div>
 
       <main class="page">
-         <section class="page_section page_section_1">
+         <section class="page_section page_section_2">
             <h2 class="page_title">О личности</h2>
             <div class="page_text">
                <p>Приветствую на моей сранице. Я Таня.  
@@ -68,7 +77,7 @@
                Мне важно делать работу, которая удовлетворит обе стороны.</p>
             </div>
          </section>   
-         <section class="page_section page_section_2">
+         <section class="page_section page_section_3">
             <h2 class="page_title">Профессия</h2>
             <div class="page_text">
                <p>С июня 2013 года по август 2021 года работала в отделе по гражданству и миграции. Уволилась с должности старшего инспектора по соглашению сторон.
@@ -84,7 +93,7 @@
                Ссылка на мое портфолио: <a href="https://github.com/Kommeta" target="_blank">https://github.com/Kommeta</a></p>
             </div>
          </section>   
-         <section class="page_section page_section_3">
+         <section class="page_section page_section_4">
             <h2 class="page_title">Навыки</h2>
             <div class="page_text">
                <p>HTML5 CSS3 JAVASCRIPT 
@@ -105,7 +114,7 @@
    </div>
    <!--wrapper-->
 
-   <footer id="tab_05" class="footer">
+   <footer class="footer page_section_5">
       <div class="footer_icons">
          <a href="tel:+380502902091" class="icon">
             <img src="../img/phone.png" alt="phone">
