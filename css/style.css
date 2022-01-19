@@ -59,6 +59,7 @@ body.lock {
   left: 0;
   width: 100%;
   z-index: 10;
+  background: rgb(88, 88, 88);
   background: rgb(217 217 217 / 58%);
 }
 .header_logo {
@@ -75,13 +76,13 @@ body.lock {
   margin: 0 0 0 25px;
 }
 .menu_link {
-  color: #000000;
+  color: #ffffff;
   text-transform: uppercase;
   font-size: 18px;
   text-decoration: none;
 }
 .menu_link:hover {
-  color: rgb(13, 13, 65);
+  color: rgb(176, 176, 255);
   text-shadow: 1px 1px 5px rgb(230, 192, 248);
 }
 .menu-icon {
@@ -114,7 +115,7 @@ body.lock {
     height: 10%;
     width: 100%;
     transition: all 0.3s ease 0s;
-    background-color: #000000;
+    background-color: #3a3a3a;
   }
   .menu-icon::before,
   .menu-icon::after {
@@ -174,51 +175,37 @@ body.lock {
   }
   .menu_link {
     font-size: 22px;
+    color: #000000;
   }
 }
 .name_block {
   background: url("../img/greenTany-1.jpg") 0 0/100% auto no-repeat;
-  position: relative;
+  background-size: cover;
+  padding: 120px 0 100px 40px;
 }
-.name_content {
-  background: inherit;
-  display: flex;
-  margin: auto;
-  min-height: 100vh;
-}
+
 .name_wrapper {
-  position: relative;
   display: flex;
   flex-direction: column;
-
-  margin: auto;
-  width: 500px;
-  height: 400px;
+  justify-content: center;
+  width: 55%;
+  padding: 40px 0 40px 40px;
   box-shadow: 1px 1px 4px rgba(14, 14, 14, 0.3);
-  color: rgb(253, 253, 253);
   font-family: "Ruda", sans-serif;
   text-transform: uppercase;
-  border-radius: 25px;
-}
-.name_wrapper::before {
-  content: "";
-  position: absolute;
-  top: 0;
-  left: 0;
-  right: 0;
-  bottom: 0;
-  background: inherit;
-  filter: blur(5px);
-  filter: url(#blur);
+  border-radius: 55px;
+  background-color: rgba(134, 134, 134, 0.3);
 }
 .name_surname {
-  font-size: 48px;
+  font-size: 30px;
   font-weight: bold;
   line-height: 55px;
   letter-spacing: 0.2em;
-  padding: ;
+  color: rgb(255, 255, 255);
+  margin-bottom: 40px;
 }
 .name-job {
+  color: rgb(255, 255, 255);
   font-size: 20px;
   letter-spacing: 0.2em;
 }
@@ -301,7 +288,30 @@ body.lock {
 }
 
 @media (max-width: 576px) {
-  .wrapper {
+  .name_block {
+    padding: 80px 0 30px 30px;
+  }
+  .header_container {
+    min-height: 40px;
+  }
+  .header_logo {
+    flex: 0 0 40px;
+  }
+  .menu_body::before {
+    height: 40px;
+  }
+  .name_wrapper {
+    width: 77%;
+    padding: 30px 0 30px 20px;
+    border-radius: 45px;
+  }
+  .name_surname {
+    font-size: 20px;
+    line-height: 32px;
+    margin-bottom: 25px;
+  }
+  .name-job {
+    font-size: 14px;
   }
 
   .footer {
