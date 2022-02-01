@@ -41,3 +41,7 @@ if(iconMenu){                          //проверяем есть ли так
       menuBody.classList.toggle('active');
    });
 }
+
+//Слайдер-------------------------
+
+new Swiper('.swiper');
