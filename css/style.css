@@ -364,6 +364,9 @@ body.lock {
   .menu_body::before {
     height: 40px;
   }
+  .menu_body {
+    padding: 60px 30px 30px 30px;
+  }
   .name_wrapper {
     width: 77%;
     padding: 30px 0 30px 20px;
@@ -377,13 +380,61 @@ body.lock {
   .name-job {
     font-size: 14px;
   }
+  .page_section_2 {
+    margin: 100px 0;
+  }
+  .page_title {
+    font-size: 22px;
+    margin: 10px 0 10px 0;
+  }
+  .page_section img {
+    width: 120px;
+    height: 120px;
+    margin-top: -80px;
+    border: 6px double #e9e9e9;
+  }
+  .page_text {
+    font-size: 12px;
+    line-height: 112%;
+  }
+  .projects-title {
+    font-size: 22px;
+    padding: 40px 0 10px 0;
+  }
+  .link-project img {
+    max-width: 230px;
+    margin: 10px 15px 10px 15px;
+    border: 6px double #e9e9e9;
+    border-radius: 10%;
+  }
+  .page_section_4 {
+    margin: 100px 0 50px 0;
+  }
+  .menu_list > li {
+    margin: 0 0 25px 0;
+  }
+  .menu_link {
+    font-size: 16px;
+  }
+  .motivation {
+    margin-bottom: 40px;
+  }
+  .motivation_text {
+    font-size: 12px;
+    line-height: 150%;
+    margin: 10px 10px;
+  }
+  .motivation_author {
+    font-size: 12px;
+    margin: 10px 0;
+  }
   .footer {
-    padding: 50px 10px;
+    padding: 30px 10px;
   }
   .footer_link {
-    font-size: 13px;
+    font-size: 12px;
   }
   .footer_icons a img {
-    width: 25px;
+    width: 22px;
   }
 }
